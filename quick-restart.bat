@@ -1,0 +1,16 @@
+@ECHO OFF
+
+:: SET WINDOW SIZE
+MODE CON: cols=160 lines=40
+
+:: RUN THE BOT
+:RUN
+%cd%\bin\Debug\netcoreapp3.1\bot_3.3.0
+ECHO Bot terminated
+
+:: PAUSE AFTER BOT ENDS
+PAUSE
+
+GOTO RUN :: RUN THE BOT AGAIN
+
+PAUSE :: PAUSE IN CASE SOMETHING GOES WRONG
