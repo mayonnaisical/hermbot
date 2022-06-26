@@ -1,11 +1,11 @@
 @ECHO OFF
 
 :: SET WINDOW SIZE
-MODE CON: cols=160 lines=40
+MODE CON: cols=140 lines=40
 
 :: RUN THE BOT
 :RUN
-%cd%\bin\Debug\netcoreapp3.1\bot_3.3.0
+hermbot_3.3.0.exe
 ECHO Bot terminated
 
 :: PAUSE AFTER BOT ENDS
